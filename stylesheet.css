@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    color: #64f32c;
+    background-color: #f7abb8;
+    margin: 15pt;
+}
+
+h1 {
+    font-family: Impact, sans-serif
+    font-size: 26pt;
+    font-weight: bold;
+    color: #02023d;
+}
+
+h2 {
+    font-family: Impact, sans-serif
+    font-size: 22pt;
+    font-weight: bold;
+    color: #033157;
+}
+
+h3 {   
+    font-family: Impact, sans-serif
+    font-size: 18pt;
+    font-weight: bold;
+    color: #8675f5;
+}
+
+p {
+    font-family: 'Segoe UI', sans-serif
+    font-size: 12pt;
+    color: #333333;
+    line-height: 1.6;
+}
+
+a:link, a:visited {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ff6a;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff2600;
+}
+
+
+table, th, td {
+    border: 1px solid;
+    align-items: left;
+    color: #da1ef3 
+}
