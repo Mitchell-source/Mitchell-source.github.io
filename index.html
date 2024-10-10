@@ -6,40 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitchell Hammond Portfolio</title>
-    <script src="main.js" defer></script>
+    <script src="main.js"></script>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li onmouseover="changeNavColorOnHover(this)" onmouseout="resetNavColor(this)">
-                <a href="index.html">Home</a>
-            </li>
-            <li onmouseover="changeNavColorOnHover(this)" onmouseout="resetNavColor(this)">
-                <a href="about.html">About</a>
-            </li>
-            <li onmouseover="changeNavColorOnHover(this)" onmouseout="resetNavColor(this)">
-                Contact
-            </li>
-        </ul>
-    </nav>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="">Menu</button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+      </div>
 
-    <header>
+      <header>
         <h1>Mitchell Hammond</h1>
     </header>
 
-    <p id="greeting">Hello! Please enter your name below</p>
-    <button onclick="promptUserName()">Enter Your Name</button>
-
+    <h3>Hello, please enter your name:</h3>
+    
+    <form id="nameForm">
+        <input type="text" id="nameInput" placeholder="Your name" required>
+        <button type="button" onclick="ShowName()">Submit</button>
+    </form>
+    <br>
+    <div id="greeting"></div>
+    <br>
+    
     <!-- I didn't have any good pics of myself so here is a nearly 4k image of my friend-->
-    <img id="profileImage" src="images/myself.png" alt="Image of my friend" style="width: 150px;" onclick="enlargeImage()" ondblclick="restoreImage()">
+    <img id="profileImage" src="images/myself.png" alt="Image of my friend" style="width: 150px;" onclick="enlargeImage()">
 
 
 
     <header>
-        <h1>Education</h1>
+        <h2>Education</h2>
     </header>
-    <h2>Previous Education</h2>
+    <h3>Previous Education</h3>
     <ul>
         <li><strong>High School:</strong> Bayridge Secondary School (2018 - 2022)</li>
     </ul>
@@ -50,11 +52,11 @@
 
 
 <header>
-    <h1>Work Experience</h1>
+    <h2>Work Experience</h2>
 </header>
 
 
-    <h2>Previous and Current Work Experience</h2>
+    <h3>Previous and Current Work Experience</h3>
     <ul>
         <li><strong>Giant Tiger:</strong> Associate (2020 - 2022)</li>
         <li><strong>TMU SCC Conference Centre:</strong> Conference Staff (2023 - Present)</li>
