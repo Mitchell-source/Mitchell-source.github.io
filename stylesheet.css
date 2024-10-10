@@ -90,23 +90,6 @@ ul {
   li {
     float: left;
   }
-  
-  li a {
-    display: block;
-    color: white;
-    font-size: 22px;
-    text-align: left;
-    padding: 14px 40px;
-    text-decoration: none;
-    font-family: articulat-heavy-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  li a:hover {
-    background-color: darkgrey;
-    color: black;
-  }
 
   li {
     display: block;
