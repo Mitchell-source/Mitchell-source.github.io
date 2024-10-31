@@ -10,112 +10,50 @@
 </head>
 <body>
 
-<!--Next lab I will revamp the homepage and add comments-->
 
-      <div class="dropdown">
-        <button class="dropbtn" onclick="location.href='index.html'">Home</button>
-      </div>
 
-      <div class="dropdown">
-        <button class="dropbtn">About</button>
-        <div class="dropdown-content">
-            <a href="myWork.html">My Work</a>
-            <a href="socialMedia.html">Social Media</a>
-        </div>
-      </div>
 
-      <div class="dropdown">
-        <button class="dropbtn" onclick="location.href='contact.html'">Contact</button>
-      </div>
 
-      <header>
+    <!--reformatted nav bar --- I did not like working with/the look of the dropdown 
+    Not sure if I will lose marks over this-->
+    <ul>
+      <li><b class="logoText">Mitchell <br> Hammond</b></li>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="myWork.html">My Work</a></li>
+      <li><a href="socialMedia.html">Social Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!--creating a column to help organize my text-->
+    <div class="column">
+      <section>
         <h1>Mitchell Hammond</h1>
-    </header>
+        <p>3rd Year Business Technology Management Student at Toronto Metropolitan University. 
+            <br> Focused on leadership in Data and Information Management.
+        </p>
+      </section>
+      <!--button that redirects to contact.html when clicked-->
+      <button class="contactButton" onclick= redirect(4)>Get in Touch</button>
+      <br>
+    </div>
 
-    <h3>Hello, please enter your name:</h3>
-    
-    <form id="nameForm">
-        <input type="text" id="nameInput" placeholder="Your name" required>
-        <button type="button" onclick="ShowName()">Submit</button>
-    </form>
-    <br>
-    <div id="greeting"></div>
-    <br>
-    
-    <!-- I didn't have any good pics of myself so here is a nearly 4k image of my friend-->
-    <img id="profileImage" src="images/myself.png" alt="Image of my friend" style="width: 150px;" onclick="enlargeImage()">
+    <!--Want to reformat the image but don't have ideas right now-->
+    <div class="column">
+        <img src="images/myself.png" alt="Profile Image" class="profile-image" onclick="toggleZoom(this)">
+    </div>
 
+    <!--This is my fix for the footer not working how I want until I figure out an actual way to fix this-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
 
-
-    <header>
-        <h2>Education</h2>
-    </header>
-    <h3>Previous Education</h3>
-    <ul>
-        <li><strong>High School:</strong> Bayridge Secondary School (2018 - 2022)</li>
-    </ul>
-    <h2>Current Education</h2>
-    <ul>    
-        <li><strong>University:</strong> Toronto Metropolitain University (2022 - Current)</li>
-    </ul>
-
-
-<header>
-    <h2>Work Experience</h2>
-</header>
-
-
-    <h3>Previous and Current Work Experience</h3>
-    <ul>
-        <li><strong>Giant Tiger:</strong> Associate (2020 - 2022)</li>
-        <li><strong>TMU SCC Conference Centre:</strong> Conference Staff (2023 - Present)</li>
-        <li><strong>Limestone District Schoolboard:</strong> [Student Position] Microsoft Sharepoint Developer (2023 - Present)</li>
-
-    </ul>
-
-
-
-    <h2>Courses and Programs</h2>
-    <p>I am currently pursuing my Bachelor of Commerce degree, through the Business Technology Management program at TMU. The program covers fundementals of business management, information systems, accounting and financials, and much more. I am </p>
-    
-    <h3>Most Useful Course </h3>
-    <p>ITM500 - Data and Information Management has been the course I've found to be most useful to me, with this course hopefully taking its place. 
-        The course dives into SQL and obviously, database management. I think it's most useful to me because I can 
-        easily see myself in a position where I will be using what I learned from the course, since even though I'm in a management course, I do not want to be client facing. </p>
-
-
-
-    <h2>Educational Awards</h2>
-    <ul>
-        <li>None :(</li>
-      
-    </ul>
-
-
-
-    <h2>Extracurricular Activities</h2>
-    <ul>
-        <li>None, except that I have a campus job.</li>
-    
-    </ul>
 
     
-    <table>
-        <tr>
-            <td><a href="https://www.w3schools.com" target="_blank">W3Schools</a></td>
-            <td>Learn to code with the world's largest web developer site</td>
-        </tr>
-        <tr>
-            <td><a href="https://www.youtube.com" target="_blank">YouTube</a></td>
-            <td>YouTube is a video-sharing site where users can upload, view, and share videos</td>
-        </tr>
-    </table>
 
 
-    <footer>
-        <p>Copywrong © 2024 Mitchell Hammond. No Rights Reserved.</p>
-        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Follow me on social media!</a></p>
-    </footer>
-
-</body>
+    
+    </body>
+    <!--footer-->
+    <footer>Mitchell Hammond <br> Copyright &copy; 2024</footer>
 </html>
+

@@ -1,145 +1,166 @@
+/*---------------------------------*/
+/*----GENERAL CSS FOR ALL PAGES----*/
+/*---------------------------------*/
+/*Changing background colour*/
 html {
-    background-color: black;
-  }
-
-body {  
-    color: white;
-    text-align: left;
-    font-family: articulat-heavy-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    padding-top: 0px;
-     float: left;
-  }
-
-p {  
-    color: white;
-    text-align: left;
-    font-family: articulat-heavy-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    padding-top: 0px;
-    float: left;
-  }
-
-h1 {
-    font-size: 60px;
-    text-align: left;
-    padding-bottom: 50px;
-    color: white;
-    font-family: articulat-heavy-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 0px;
-  }
-  
-  h2 {
-    font-size: 60px;
-    text-align: left;
-    padding-bottom: 2px;
-    color: white;
-    font-family: articulat-heavy-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 0px;
-  }
-  
-  h3 {
-    padding-bottom: 2px;
-    text-align: left;
-    font-family: articulat-heavy-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    margin-top: 0px;
-  }
-  
-  h4 {
-    padding-bottom: 2px;
-    text-align: left;
-    font-family: articulat-heavy-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    margin-top: 0px;
-  }
-
-a:link, a:visited {
-    color: #748596;
-    text-decoration: none;
+  background-color: #2B2D42;
 }
-
-table, th, td {
-    border: 1px solid;
-    align-items: left;
-    color: #ffffff 
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 30px;
-    overflow: hidden;
-    background-color: black;
-    height: 70px;
-  }
-  
-  li {
-    float: left;
-  }
-
-  li {
-    display: block;
-    color: white;
-    font-size: 22px;
-    text-align: left;
-    text-decoration: none;
-    font-family: articulat-heavy-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  li:hover {
-    background-color: darkgrey;
-    color: black;
-  }
-
-
-  /* Dropdown Button */
-.dropbtn {
-  background-color: #868188;
+/*Stylizing paragraphs*/
+p {
+  font-size: 17px;
+  padding-left: 300px;
   color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
 }
+/*Creating indent div for future use*/
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+
+
+/* --------------------------------- */
+/* --------FORMATTING NAVBAR-------- */
+/* --------------------------------- */
+/*Creates unordered list*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  overflow: hidden;
+  background-color: #2B2D42;
+  padding-left: 200px;
 }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+/*List floats left*/
+li {
+  float: left;
 }
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+/*Formatting font, padding, etc...*/
+li a {
   display: block;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-family: 'Akshar', sans-serif;
+}
+/*Changes colour on hover*/
+li a:hover {
+  background-color: darkgrey;
+  color: black;
+}
+/*Creates indent*/
+div.a {
+  text-indent: 50px;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {display: block;}
+/* ---------------------- */
+/* --------FOOTER-------- */
+/* ---------------------- */
+/*Changing colour, width, padding, etc..*/
+footer{
+  margin-top: 20px;
+  background-color: #8D99AE;
+  height: 80px;
+  width: 99.3%;
+  padding-bottom: 0px;
+  padding-top: 15px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-family: 'Akshar', sans-serif;
+}
 
-.dropdown:hover .dropbtn {background-color: #afacb1;}
+
+/*------------------------------*/
+/*----All CSS FOR INDEX.HTML----*/
+/*------------------------------*/
+/*Overwriting <h1> tag for better use in site*/
+h1 {
+  font-size: 45px;
+  padding-left: 300px;
+  padding-top: 200px;
+  color: white;
+}
+/*Formatting text so its aligned with nav bar*/
+#logoText {
+  padding-left: 100px;
+  padding-right: 0px;
+  float: left;
+}
+/*Changing colour and padding of button, rounding corners for smoother look*/
+.contactButton {
+  border-radius: 5px;
+  background-color: #8D99AE;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 300px;
+  cursor: pointer;
+}
+/*Had to create seperate list item to format name/logo without messing up formatting for nav bar*/
+li b {
+  padding-left: 0px;
+  padding-right: 50px;
+  color: white;
+  font-family: 'Akshar', sans-serif;
+  font-size: 20px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Profile image styling */
+.profile-image {
+  width: 300px; 
+  height: auto;
+  margin-left: 200px;
+  margin-top: 40px;
+  border-radius: 10px; 
+  transition: transform 0.3s ease; 
+  cursor: pointer; 
+}
+
+.profile-image.zoomed {
+  transform: scale(1.5);
+}
+
+
+/*----------------------------------*/
+/*----CSS USED IN CONTACT.HTML----*/
+/*----------------------------------*/
+/*Formatting within this div*/
+.contactForm {
+  font-size: 17px;
+  font-family: 'Akshar', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/*overwriting h3 for use in this page*/
+h3 {
+  font-size: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+/*Formatting the submit and clear button... Similar to the other buttons*/
+.cButton {
+  border-radius: 5px;
+  background-color: #8D99AE;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}

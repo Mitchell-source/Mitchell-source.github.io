@@ -10,27 +10,77 @@
 </head>
 <body>
 
-      <div class="dropdown">
-        <button class="dropbtn" onclick="location.href='index.html'">Home</button>
-      </div>
+  <ul>
+    <li><b class="logoText">Mitchell <br> Hammond</b></li>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="myWork.html">My Work</a></li>
+    <li><a href="socialMedia.html">Social Media</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 
-      <div class="dropdown">
-        <button class="dropbtn">About</button>
-        <div class="dropdown-content">
-            <a href="myWork.html">My Work</a>
-            <a href="socialMedia.html">Social Media</a>
-        </div>
-      </div>
+<!--Contact form with various elements for customer name, email, contact method, etc...-->
+<div class="contactForm">
+  <h3>Contact Me</h3>
+  <form id="contactForm">
 
-      <div class="dropdown">
-        <button class="dropbtn" onclick="location.href='contact.html'">Contact</button>
-      </div>
+      <!-- 1. Single-line text field for name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+
+      <!-- 2. Single-line text field for email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+
+      <!-- 3. Single-line text field for phone number -->
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone">
+      <br><br>
+
+      <!-- 4. Radio buttons for preferred contact method -->
+      <label>Preferred Contact Method:</label><br>
+      <input type="radio" id="contact_email" name="contactMethod" value="Email" checked>
+      <label for="contact_email">Email</label><br>
+      <input type="radio" id="contact_phone" name="contactMethod" value="Phone">
+      <label for="contact_phone">Phone</label><br>
+      <input type="radio" id="contact_none" name="contactMethod" value="None">
+      <label for="contact_none">No Preference</label>
+      <br><br>
+
+      <!-- 5. Checkboxes for services interested in -->
+      <label>Services Interested In:</label><br>
+      <input type="checkbox" id="web_design" name="services" value="Web Design">
+      <label for="web_design">Web Design</label><br>
+      <input type="checkbox" id="seo" name="services" value="SEO">
+      <label for="seo">SEO</label><br>
+      <input type="checkbox" id="consulting" name="services" value="Consulting">
+      <label for="consulting">Consulting</label>
+      <br><br>
+
+      <!-- 6. Dropdown menu for best time to contact -->
+      <label for="bestTime">Best Time to Contact:</label>
+      <select id="bestTime" name="bestTime">
+          <option value="Morning">Morning</option>
+          <option value="Afternoon">Afternoon</option>
+          <option value="Evening">Evening</option>
+      </select>
+      <br><br>
+
+      <!-- 7. Multiple-line text field for additional questions or comments -->
+      <label for="additionalQuestions">Additional Questions or Comments:</label><br>
+      <textarea id="additionalQuestions" name="additionalQuestions" rows="5" cols="30"></textarea>
+      <br><br>
+
+      <!-- 8. Submit and Clear buttons -->
+      <button class="cButton" type="button" onclick="submitForm()">Submit</button>
+      <button class="cButton" type="reset">Clear</button>
+
+  </form>
+</div>
 
 
-      <br>
-      <p>This is the contact page.</p>
-
-
-
-    </body>
+</body>
+<!--footer-->
+<footer>Mitchell Hammond <br> Copyright &copy; 2024</footer>
     </html>
