@@ -38,6 +38,36 @@ function submitForm() {
 }
 
 
+// Enlarges the image on click
 function toggleZoom(image) {
     image.classList.toggle("zoomed");
+}
+
+// Function that increases the text size when the button on My Work is clciked. Assisted by StackOverflow
+function increaseTextSize() {
+  const strongTags = document.querySelectorAll('strong');
+  strongTags.forEach(tag => {
+      let currentSize = window.getComputedStyle(tag).fontSize;
+      let newSize = parseFloat(currentSize) * 1.2 + 'px'; // Increase font size by 20%
+      tag.style.fontSize = newSize;
+  });
+}
+
+
+function toggleColors() {
+  const body = document.body;
+  if (body.style.backgroundColor === 'Black') {
+      body.style.backgroundColor = 'White';
+      body.style.color = 'Black';
+  } else {
+      body.style.backgroundColor = 'Black';
+      body.style.color = 'White';
+  }
+}
+
+
+function showAltText() {
+  document.getElementById('altText1').innerText = document.getElementById('img1').alt;
+  document.getElementById('altText2').innerText = document.getElementById('img2').alt;
+  document.getElementById('altText3').innerText = document.getElementById('img3').alt;
 }

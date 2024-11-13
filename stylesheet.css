@@ -13,7 +13,10 @@ p {
 }
 /*Creating indent div for future use*/
 
-
+figcaption{
+  font-size: 17px;
+  color: white;
+}
 
 /* --------------------------------- */
 /* --------FORMATTING NAVBAR-------- */
@@ -163,4 +166,77 @@ h3 {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+}
+
+/*Formatting the images on the My Work page*/
+#img1,
+#img2,
+#img3 {
+    width: 250px;
+    height: auto; 
+    margin: 10px; 
+}
+
+/*Formatting all buttons on the My Work page*/
+.accessibility-button {
+    border-radius: 5px;
+    background-color: #8D99AE;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 10px; /* Adds space between buttons */
+  margin: 20px 0;
+}
+
+/*Formatting alt text and text that shows font size*/
+strong {
+    font-size: 17px;
+    color: white;
+    text-align: center;
+}
+
+.font-size-test {
+  font-size: 17px;
+    color: white;
+    text-align: center;
+}
+
+
+/* formatting images and audio clip, centering and sizing*/
+.image-gallery {
+  display: flex;
+  justify-content: space-around; /* Space between each figure */
+  align-items: center;
+  margin: 20px 0;
+}
+
+.image-gallery figure {
+  text-align: center; /* Centers caption and alt text below each image */
+  margin: 0 10px;
+}
+
+.image-gallery img {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.media-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
 }
